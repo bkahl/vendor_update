@@ -50,12 +50,16 @@ def update_vendor(vendor_path)
 		file_name = file.split('/').pop	
 		curr_dir = file.split('/')
 		curr_dir = curr_dir[0...-1].join('/')
+
 		rename_file = curr_dir+"/_copy"+file_name
 		File.rename(file, rename_file)
 
+		# Make sure 'global' and 'theme' curr_dir path is correct
 		if ARGV[0] == "global"
 			curr_dir = curr_dir.gsub("../../","")
-			puts curr_dir
+		elsif ARGV[0] == "theme"
+			pwd = Dir.pwd.split("/")
+			curr_dir = pwd[-2].to_s + "/" + pwd[-1].to_s + "/" + curr_dir
 		end	
 
 		File.open(file, "w") do |new_file|
