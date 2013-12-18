@@ -7,10 +7,51 @@ def init(which_vendor_path)
 
 	if which_vendor_path == "theme"
 		vendor_path = "sass/vendor/**/*.scss"
-		update_vendor(vendor_path)
+
+		if File.directory?(vendor_path.gsub("/**/*.scss","/"))	
+			paths = Dir.glob(vendor_path.gsub("/**/*.scss","/*"))
+			if paths.any?	
+				update_vendor(vendor_path)
+			else
+				puts ""
+				puts "*******************************************************"
+				puts "Please add vendor's to 'sass/vendor/**', nothing"
+				puts "exists within that directory currently."
+				puts "*******************************************************"
+				puts ""
+			end
+		else
+			puts ""
+			puts "*******************************************************"
+			puts "Directory 'sass/vendor' doesn't exist, please create"
+			puts "one prior to running the 'theme' on this script."
+			puts "*******************************************************"
+			puts ""
+		end
+
 	elsif which_vendor_path == "global"
 		vendor_path = "../../sass/vendor/**/*.scss"
-		update_vendor(vendor_path)
+
+		if File.directory?(vendor_path.gsub("/**/*.scss","/"))	
+			paths = Dir.glob(vendor_path.gsub("/**/*.scss","/*"))
+			if paths.any?	
+				update_vendor(vendor_path)
+			else
+				puts ""
+				puts "*******************************************************"
+				puts "Please add vendor's to '../../sass/vendor/**', nothing"
+				puts "exists within that directory currently."
+				puts "*******************************************************"
+				puts ""
+			end
+		else
+			puts ""
+			puts "*******************************************************"
+			puts "Directory '../../sass/vendor' doesn't exist, please"
+			puts "create one prior to running the 'global' on this script."
+			puts "*******************************************************"
+			puts ""
+		end
 	else
 		puts ""
 		puts "*******************************************************"
