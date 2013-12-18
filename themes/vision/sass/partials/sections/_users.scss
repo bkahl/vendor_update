@@ -1,0 +1,305 @@
+// _users.scss
+
+#accountManagementApplication span {
+	margin-top: 5px;
+	display: inline-block;
+}
+
+.admin-app {
+	form > fieldset {
+		margin-top: 0px;
+		border-width: 0px;
+	}
+	.tabs-content {
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+	.tabs-content > li {
+		padding-top: 10px;
+	}
+	dl.tabs dd {
+		height: 40px;
+		background-color: #ddd;
+		border: solid 1px grey;
+	}
+	dl.tabs dd.active {
+		background-color: white;
+		margin-top: 0px;
+		border-bottom-width: 0px;
+		border-left-width: 0px;
+	}
+	dl.tabs {
+		height: 40px;
+		padding: 0;
+	}
+	dl.tabs a {
+		padding: 8px;
+		width: 100%;
+	}
+}
+
+.picture-column {
+	border-left: solid 1px #ddd;
+	padding-left: 20px;
+}
+.picture-container img {
+	width: 200px;
+	height: 200px;
+}
+
+.file-control {
+	display: none;
+}
+
+#new-user-button {
+	display: table-cell;
+	float: left;
+	margin-left: 43px;
+	margin-right: 62px;
+	height: 56px;
+	width: 56px;
+}
+
+/* account/user and group management table */
+#user-list-table {
+	padding: 0;
+	margin-top: 20px;
+}
+
+#groupListTable {
+    padding: 0;
+
+}
+
+.gridNoResultsRow {
+    text-align: center; 
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.deleteColumnCell {
+    padding: 0; 
+    text-align:center;
+    vertical-align: middle;      
+}
+
+.deleteColumnCell button {
+    width: 20px;
+    height: 20px;
+    padding: 0 0 2px;
+    margin: 0 10px;
+    letter-spacing: 0;
+
+}
+
+/* END account/user and group management table */
+
+/* user groups */
+
+.group-list-container td a {
+	display: block;
+}
+
+div.usergroup {
+	display: inline;
+}
+
+.remove-circle.two.columns {
+	color: #955;
+	font-weight: bold;
+}
+#divgrouplist .row {
+	margin: 0 0 10px;
+}
+#divgrouplist {
+	display: inline-block;
+}
+#new-group-button {
+	font-size: 11px;
+	color: #69c;
+	padding-left: 70px;
+	float: right;
+}
+#userGroupsApplication .remove-circle {
+	color: #e87;
+	font-weight: bold;
+	display: inline-block;
+	padding: 0px 7px;
+	margin: 0 5px 0 6px;
+	border-radius: 2px;
+	cursor: pointer;
+	float: right;
+}
+#userGroupsApplication .remove-circle:hover {
+	color: #fff;
+	background: #c44;
+	-webkit-box-shadow: 1px 1px 2px 0px #555;
+    box-shadow: 1px 1px 2px 0px #555;
+
+}
+
+#txtGroupSearch {
+	max-width: 290px
+}
+
+#btnNewGroup{
+	max-width: 150px;
+}
+
+#rdoIsPublic{
+    margin-right: 10px;
+}
+
+.users li {
+	list-style: none;
+	border-bottom: 1px solid #ddd;
+	padding: 5px 0 5px 20px;
+	cursor: pointer;
+}
+.users li:first-child {
+	border-top: 1px solid #ddd;
+}
+.users.members li {
+	background: #eee;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	display: inline-block; 
+	padding: 2px 18px 2px 2px;
+	margin: 3px;
+}
+
+.users.members.disabled li {
+    padding: 2px 8px;
+}
+
+.users.members li:hover {
+	background: #ddd image-url("sprite_icons.png") no-repeat right -431px;
+}
+
+.users.members.disabled li:hover {
+    background: none repeat scroll 0 0 #eee;
+    cursor: default;
+}
+
+.users.nonmembers li:hover {
+	background: #eee image-url("sprite_icons.png") no-repeat right -466px;
+}
+.users.members, .users.nonmembers {
+	max-height: 200px; 
+	overflow-y: auto;
+	overflow-x: none;
+	margin: 15px 0;
+	border: 1px solid #ccc;
+}
+.users.members {
+	margin: 0 0 20px 0;
+}
+
+.users.members.disabled {
+    background-color: #ddd;
+}
+
+
+.users.nonmembers {
+	height: 150px;
+}
+
+#rdoIsPublic {
+	margin-left: 10px;
+}
+
+#nonmembersearch {
+	position: absolute;
+	margin: -9px 0 0 95px;
+	width: 240px;
+}
+#addGroupModal label.inline {
+	line-height: 18px;
+	display: inline;
+	float: left;
+}
+
+/* inorder to keep column header from moving when sorted icon is inserted */
+.sortedColumn {
+    position:relative;
+    top:-1px;
+}
+
+/*  
+
+#object_list_labels {
+	height: 40px;
+	width: 520px;
+	padding: 15px 25px 0 0;
+	border-bottom: 1px solid #ddd;
+}
+#object_list_labels span:first-child {
+	width: 320px;
+	display: inline-block;
+}
+#object_list_labels span {
+	font-weight: bold;
+	color: #777;
+	font-size: 16px;
+}
+#object_list_labels span a {
+	font-size: 11px;
+	padding-left: 10px;
+	color: #79a;
+}
+#object_list_labels span a:hover {
+	
+}
+ul.object_list {
+	display: block;
+	height: 37px;
+	width: 100%;
+	margin: 0;
+	cursor: pointer;
+}
+ul.object_list:hover {
+	background: #ddd;
+}
+.object_list li {
+	list-style: none;
+	border-bottom: 1px solid #ddd;
+	padding: 7px 0;
+}
+.object_list li div {
+	display: inline;
+}
+.object_list li.group {
+	font-weight: bold;
+	width: 333px;
+}
+.object_list li.visible {
+	width: 187px;
+}
+.object_list li.group, 
+.object_list li.visible {
+	float: left;
+}
+.object_list a {
+	display: block;
+	color: #555;
+}
+.object_list li a:hover {
+	text-decoration: none; 
+	color: #555;
+}	
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

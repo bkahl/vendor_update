@@ -1,0 +1,54 @@
+﻿.panel.landing {
+	overflow: auto;
+}
+
+.landing #modules > a, .landing #modules > li {
+	background: #eeeeee image-url("sprite_icons_xlarge.png") no-repeat center 50px;
+	font: 22px Lato, Arial, Helvetica, sans-serif;
+	color: #555;
+	display: block;
+	height: 190px;
+	width: 24%;
+	margin: 75px 0 50px 7%;
+	border: 1px solid #888888;
+	border-radius: 5px;
+	float: left;
+	text-align: center;
+	padding: 10px;
+	-webkit-box-shadow: 1px 1px 3px 0px #666666;
+	box-shadow: 1px 1px 3px 0px #666666;
+}
+.landing #modules .inactive {
+	opacity: 0.4;
+	cursor: default;
+}
+.landing #modules #started {
+	background-position: center -180px;
+}
+.landing #modules #activity {
+	background-position: center -448px;
+}
+
+.landing #modules > .active:hover {
+	background-color: #fff;
+}
+.landing #modules a:hover {
+	text-decoration: none;
+}
+
+.landing #modules .latest-links {
+	list-style: none;
+	margin: 0px;
+
+	li {
+		margin-bottom: 16px;
+	}
+
+	li.active { display: block; }
+	li.inactive { display: none; }
+
+	li a {
+		font-size: 18px;
+		color: white;
+	}
+}

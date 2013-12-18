@@ -65,7 +65,7 @@ def update_vendor(vendor_path)
 		File.open(file, "w") do |new_file|
 			File.open(rename_file, "r") do |old_file|
 				old_file.each_line do |line|
-					path = /url\([^\)]*\)/
+					path = /url\([^:\)]*\)/
 					path_string = path.match(line).to_s.gsub("url(","").gsub(")","").gsub(/['"]/,"").to_s
 					new_path = "../"+curr_dir+"/"+path_string
 					new_file.puts line.gsub(path, "url('"+new_path+"')")

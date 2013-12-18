@@ -1,0 +1,762 @@
+﻿/* ---Thinkspace Subnav (Overrides to foundation top-bar)--- */
+
+@mixin subnav-item {
+	background: #333 image-url("sprite_icons_transparency.png") no-repeat 0 100px;
+	padding: 7px 15px 0px 35px;	
+	color: #ddd;
+	margin: 0;
+}
+@mixin subnav-item-hover {
+	background-color: #444;
+	text-decoration: none;
+	color: #fff;
+}
+
+.top-subnav .thinkspace-sub-nav a {
+	@include subnav-item;	
+	height: 28px;
+	display: inline-block;
+	border-right: 1px solid #444;
+}
+.top-subnav .thinkspace-sub-nav a:hover {
+	@include subnav-item-hover;
+}
+
+.top-subnav .thinkspace-sub-nav ul {
+	position: absolute;
+	z-index: 100;
+}
+
+.top-subnav .thinkspace-sub-nav li {
+	@include subnav-item;
+	list-style: none outside none;
+	cursor: pointer;
+}
+.top-subnav .thinkspace-sub-nav li:hover {
+	@include subnav-item-hover;
+
+}
+
+.top-bar.thinkspace-sub-nav {
+	background-color: #333;
+	height: 37px !important;
+	line-height: 37px !important;	
+	color: #888;
+}
+
+.top-bar.thinkspace-sub-nav .drop-down {
+	background: #333 !important;	
+}
+
+.top-bar.thinkspace-sub-nav ul > li.has-dropdown .dropdown li a {
+	padding: 0px 15px 0px 5px !important;
+	vertical-align: top;
+}
+.top-bar.thinkspace-sub-nav a {	
+  background: #333 image-url("sprite_icons_transparency.png") no-repeat 0 100px;
+  padding: 2px 15px 0 35px !important;
+  height: 37px !important;
+  line-height: 30px !important;
+}
+
+.top-bar.thinkspace-data-sub-nav a {
+	line-height: 42px !important;
+    padding: 0 15px !important;
+}
+.top-bar.thinkspace-sub-nav img {
+	background-color: #ddd;	
+	margin: -5px 5px 0px 5px;
+}
+/*.top-bar.thinkspace-sub-nav a:hover {
+	background: #444;
+}*/
+
+.top-bar.thinkspace-sub-nav ul > li.has-dropdown a:after {
+	top: 19px;
+	right: -14px;
+}
+
+.top-bar ul > li.has-dropdown .dropdown,
+.top-bar ul > li.has-dropdown .dropdown li {
+	background: #333;
+}
+
+.top-bar a.subnav-data {
+	background-position: 6px 8px;
+}
+.top-bar a.subnav-visualization {
+	background-position: 6px -46px;
+}
+
+span.recent-perspective-title {
+	display: inline-block; 
+	vertical-align: top
+}
+
+/*.top-subnav a.subnav-visualization span {
+	background: transparent url(images/sprite_icons.png) no-repeat right -512px;
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	margin: -16px -5px 0 5px;
+	float: right;
+}*/
+
+
+a.about, .top-bar a.about {
+	vertical-align:middle;
+    color: #FFFFFF;
+    display: block;
+}
+
+a.about:before, .top-bar a.about:before{
+	vertical-align:middle;
+	content:"";
+	display:inline-block;
+	width:20px;
+	height:20px;
+	margin-top:-3px;
+	margin-right:5px;
+	background: image-url("sprite_icons_transparency.png") no-repeat scroll 0px -311px transparent;
+}
+
+a.about:hover{
+  color: #D9D9D9;
+}
+
+
+.top-bar a.subnav-sharing {
+	background-position: 6px -238px;
+    padding-top: 3px !important;
+}
+.top-bar a.subnav-undo {
+	background-position: 6px -107px;
+	padding-top: 4px !important;
+}
+.top-bar a.subnav-redo {
+	background-position: 6px -168px;
+	padding-top: 4px !important;
+}
+
+/* ---ThinkSpace content--- */
+
+.thinkspace-example {
+	display: inline-block; 
+	padding-left: 100px;
+}
+
+.thinkspace-example-top {			
+	height: 3px;	
+	padding-bottom: 30px;
+	text-align: right;
+}
+
+.thinkspace-example-left {		
+	display: inline-block;
+	width: 200px;
+	margin-top: 60px;
+	vertical-align: top;
+}
+
+.thinkspace-example-bottom {		
+	height: 3px;
+	margin-top: 10px;
+	text-align: right;
+}
+
+
+h1.caption-edit.sub-title {
+	font-size: 14px;
+	font-weight: 700;
+	padding: 7px 0 8px;
+}
+
+div.t_fixed_header thead,
+div.t_fixed_header thead th {
+	background: #fff;
+}
+div.t_fixed_header thead th { border-right: 1px solid #fff;}
+
+div.t_fixed_header.ui .headtable th {
+	padding: 0px 3px;
+}
+div.t_fixed_header .at-header-name,
+#col-clone.at-header-name {
+	position: relative;
+	font: bold 11px Lato, arial, san-serif;
+	color: #fff;
+	border-radius: 5px;
+	margin: 1px;
+	padding: 5px;
+	cursor: default;
+}
+#col-clone {
+	text-align: center;
+}
+.dimension.at-header-name {
+	background: #38a;
+}
+.metric.at-header-name {
+	background: #7a0;
+}
+.temporal.at-header-name {
+	background: #e93;
+}
+.geo.at-header-name {
+	background: #e93;
+}
+.identity.at-header-name {
+    background: #89a;
+}
+
+.analysis-table-container .function span {
+	cursor: pointer;
+	float: left;
+	font-weight: normal;
+	margin-left: 21px;
+}
+.analysis-table-container .function span i {
+	cursor: pointer;
+	margin-left: 3px;
+}
+
+div.t_fixed_header_main_wrapper.ui {
+	border: none;
+}
+#analysistable-container table {
+	border: none;
+	margin-top: 1px;
+}
+#analysistable-container .ui-widget-content {
+	border: none;
+}
+#analysistable-container .ui-widget-content td {
+	border: 1px solid #eee;
+}
+#analysistable-container div.t_fixed_header.ui .body tr td {
+	border: 1px solid #eee;
+	background: none;
+	font-size: 10px;
+	padding: 3px;
+}
+
+/* larger overrides */
+.t_fixed_header.ui-state-default.default.ui {
+	background: #fff;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	background: none;
+}
+#analysistable-container .ui-widget.ui-widget-content.ui-corner-all {
+	margin: -20px;
+}
+
+/* drop zone hint */
+.drop-zone-hint {
+	color: #fff;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin: 20px -70px;        
+}
+
+/* dropzone highlight */
+.dropzoneHighlight {
+	background-color: rgba(110, 150, 210, 0.7);
+    display: block;
+}
+
+.spacer-cell {
+	border-bottom: 1px solid transparent !important;
+	background: #fff !important;
+}
+.spacer-remove-border-top {
+	background: none repeat scroll 0 0 #FFFFFF;
+    height: 1px;
+    margin: -4px 0 0 -3px !important;
+    position: absolute;
+    width: 19px;
+}
+
+/* -----Calculated columns----- */
+
+.formula-hints {	
+	text-align: right;	
+}
+.formula-hints li {
+	list-style: none outside none;
+	font-size: 10px;
+	margin: 2px 0;
+}
+
+.function-browser {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 3px;
+	margin: 0px 10px 10px 0px;
+}
+
+.function-browser li{
+	list-style: none outside none;
+}
+
+.function-browser button span {
+	display: inline-block;
+}
+
+.function-list-container {
+	width: 190px;
+	height: 245px;
+	overflow: auto;
+}
+
+.field-list li div {
+	border: none;
+}
+
+.function-list li {
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+.function-list li:nth-child(odd) {
+	background: #f9f9f9;
+}
+.function-list li:hover {
+	background: #e9e9e9;
+	border: 1px solid #ccc;
+	border-right: none;	
+}
+
+.function-detail {
+	background: #e9e9e9;
+	border-radius: 0px 2px 2px 2px;	
+	border: 1px solid #ccc;
+	border-left: none;	
+	padding: 5px 5px 5px 10px;
+	width: 220px;	
+	position: absolute;
+	z-index: 50;
+	right: -200px;	
+}
+
+ul.formula-operators {
+	margin-top: 10px;
+}
+
+.formula-operators li {
+	list-style: none outside none;
+	display: inline-block;
+}
+
+.dialog-buttons {
+	position: absolute;
+	right: 17px;
+	bottom: 17px;
+}
+
+.test-result {
+	width: 250px;
+	max-height: 100px;
+	overflow: auto;
+}
+
+.test-result table {
+	margin: 0px;
+}
+.test-result table th,
+.test-result table td {
+	font-size: 10px;
+	padding: 0px;
+}
+
+.test-result .header-name.sm {
+	border-radius: 3px;
+}
+.test-result .header-name.sm:hover {
+	box-shadow: none;
+	cursor: default;
+}
+
+/* -----In cell graphics-----*/
+
+#in-cell-graphics-dialog li {
+	list-style: none outside none;
+	cursor: pointer;
+	border-bottom: 1px solid #eee;
+	line-height: 30px;
+}
+
+#in-cell-graphics-dialog li:hover {
+	background-color: #f9f9f9;
+}
+
+#in-cell-graphics-dialog i{
+	vertical-align: middle;
+}
+#in-cell-graphics-dialog li span {
+	vertical-align: middle;
+	margin-left: 3px;
+}
+
+.heatmap-value {
+	border-radius: 3px;
+	font-family: Arial, san-serif;
+	font-size: 10px;		
+}
+
+/* Slider style (Move to be with other jqueryuioverides */
+.ui-slider-handle {
+	background: #f6f6f6 !important;
+}
+.ui-slider-handle:hover {
+	border: 1px solid #fbcb09;
+}
+
+.filterDialog .sub-nav{
+	border-top:none;
+}
+
+.filterDialog .error{
+	margin-top:10px;
+	margin-bottom:0px;
+}
+
+.filterDialog .addOperatorButton{
+	padding:5px;
+}
+
+/* pills */
+
+.capsule {
+    background: image-url("bg_texture_grip.png") repeat scroll 0 0 transparent;
+    border-radius: 5px 5px 5px 5px;
+    /*clear: both;*/
+    color: #333333;    
+    height: 43px;
+    margin: 3px 5px 0px 0px !important;
+    overflow: visible;
+    padding: 13px 1px 1px !important;
+    position: relative;
+    width: 100%;
+	-webkit-box-shadow: 1px 1px 4px 0px #555;
+	box-shadow: 1px 1px 4px 0px #555;
+}
+.analysis-table-container .capsule {
+	padding: 1px !important;
+}
+.capsule .remove {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #777777;
+    border-radius: 50px 50px 50px 50px;
+    color: #555555;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0 4px 3px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    visibility: hidden;
+}
+.capsule:hover .remove {
+    visibility: visible;
+}
+.capsule .remove:hover {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #CCCCCC;
+}
+.capsule_draghandle {	
+	width: 100%;
+	height: 7px;
+	cursor: move;
+}
+.capsule .capsule_container {
+    background-color: #FFFFFF;
+    background-image: linear-gradient(to bottom, #FFFFFF, #DDDDDD);
+    border-radius: 3px 3px 3px 3px;
+    height: 33px;
+}
+.capsule_container .dot {
+    background: image-url("sprite_pills.png") no-repeat scroll 8px -74px transparent;
+	position: absolute;
+	height: 28px;
+	left: 0px;
+	bottom: 3px;	
+	width: 30px;
+}
+.capsule_container .dot span {
+    margin: 0 0 0 -1px;
+}
+.capsule:hover .dot img {
+    visibility: visible;
+}
+.capsule_container .title {
+    height: 18px;
+    padding: 2px;
+    text-align: center;
+    width: 100%;
+}
+.capsule_container .title_name {
+    display: inline-block;
+    position: relative;
+}
+
+/****** new capsule styles for column pills in VC *****/
+.capsule_container .title_name div {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 86%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    z-index: 10;
+}
+.capsule_container .title div i {
+    background: image-url("sprite_pills.png") no-repeat scroll 1px -45px transparent;
+    display: inline-block;	
+    height: 10px;
+    width: 10px;
+}
+.capsule_container .title_name:first-child {
+  line-height: normal;
+}
+.capsule_container .title_name:hover i {
+    background-position: 1px -33px;
+}
+.capsule_container .title_name i.active {
+    background-position: -8px -44px;
+}
+.capsule_container .title {
+    font-size: 12px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.capsule_container .title.disabled {
+	cursor: default;
+}
+
+/*************/
+
+.capsule_container .function span i, .capsule_container .title_name span i {
+    background: image-url("sprite_pills.png") no-repeat scroll 1px -43px transparent;
+    display: inline-block;	
+    height: 10px;
+    width: 10px;
+}
+.capsule_container .title_name:hover span i, .capsule_container .function span:hover i {
+    background-position: 1px -33px;
+}
+.capsule_container .title_name span i.active, .capsule_container .function span:hover i.active {
+    background-position: -12px -34px;
+}
+.capsule_container .title_name span i.active, .capsule_container .function span:hover i.active {
+    background-position: -8px -43px;
+}
+.capsule_container .title_name div, .capsule_container .title_name span, .capsule_container .function span {
+    font-size: 12px;
+	font-weight: normal;
+	cursor: pointer;
+}
+.capsule_container .options {
+    height: 14px;
+    position: relative;
+}
+.capsule .options .function {
+	float: left;
+}
+
+.capsule_container .sort {
+    background: image-url("sprite_pills.png") no-repeat scroll 6px -53px transparent;
+	display: block;
+	float: right;
+	height: 12px;
+	width: 29px;
+	cursor: pointer;
+	position: relative;
+	top: 2px;
+}
+.capsule_container .sort.up {
+	background-position: 5px -43px;
+}
+.capsule_container .sort.down {
+	background-position: 5px -33px;
+}
+.capsule .name_menu, .capsule .function_menu {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+}
+.capsule .name_menu {
+    top: 14px;
+	left: 30px;
+	text-align: left;
+}
+
+.capsule .function_menu {
+    top: 14px;
+}
+.capsule .name_menu ul, .capsule .function_menu ul {
+    margin: 0;
+}
+.capsule .name_menu ul li, .capsule .function_menu ul li {
+    border-top: 1px solid #CCCCCC;
+    color: #000000 !important;
+    font-size: 11px;
+    list-style: none outside none;
+    min-width: 75px;
+    padding: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.capsule .name_menu ul li:hover, .capsule .function_menu ul li:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
+}
+
+/* end pills */
+
+.dot-image {
+	background: image-url("hook.png");
+	display: block;
+	visibility: hidden;
+	width: 28px;
+	height: 28px;	
+	margin-left: -4px !important;
+}
+
+/* Pill colors */
+
+.dimension	{ background-color: #38a; } .dimension:hover 	{ background-color: #279; }
+.metric			{	background-color: #7a0; } .metric:hover 		{	background-color: #690; }
+.temporal		{	background-color: #e93; } .temporal:hover 	{	background-color: #d82; }
+.geo 				{ background-color: #e93; } .geo:hover				{ background-color: #d82; }
+.identity		{ background-color: #89a; } .identity:hover 	{ background-color: #789; }
+
+.off.dimension:hover { background-color: #38a; }
+.off.metric:hover 		{	background-color: #7a0; }
+.off.temporal:hover 	{	background-color: #e93; }
+.off.geo:hover				{ background-color: #e93; }
+.off.identity:hover 	{ background-color: #89a; }
+
+/* end pill colors */
+
+/* Tiny Table loading indicator */
+.tiny-table-loading {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.tiny-table-loading .data-traffic-notifier {
+	position: static;
+	width: 70%;
+	margin: 0 15%;
+}
+
+/* Flattened Chart Data Table */
+// IE10 doesn't support backface-visibility and preserve-3d, so workaround is to flip both cards instead of flipper container
+.flip-container {
+	@include perspective( 2000 );
+	position: relative;
+
+	.front, .back {
+		@include backface-visibility( hidden );
+		@include transition( 0.8s );
+		@include transform-style( preserve-3d );
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.front, &.flip .back {
+		@include transform( rotateY(0) );
+	}
+
+	.back {
+		@include transform( rotateY(180deg) );
+	}
+
+	&.flip .front {
+		@include transform( rotateY(-180deg) );
+	}
+}
+
+/* Workaround for QA.  Chrome while working on remote desktop has no 3D transforms */
+.no-csstransforms3d .flip-container {
+	.back {
+		display: none;
+	}
+
+	&.flip .front {
+		display: none;
+	}
+	&.flip .back {
+		display: block;
+	}
+}
+
+/* Orginal version if IE ever gets their act together
+   http://davidwalsh.name/css-flip
+.flip-container {
+	@include perspective( 2000 );
+
+	//hide back of pane during swap
+	.front, .back {
+		@include backface-visibility( hidden );
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	// front pane, placed above back
+	.front {
+		z-index: 2;
+	}
+
+	// back, initially hidden pane
+	.back, &.flip .flipper {
+		@include transform( rotateY(180deg) );
+	}
+}
+
+.flipper {
+	@include transition( 0.8s );
+	@include transform-style( preserve-3d );
+	position: relative;
+}
+*/
+
+$flattened-data-table-icon-dimension : 20px;
+
+.flattened-data-table-toggle {
+	width: 100%;
+	text-align: right;
+	margin: 0 0 5px;
+	cursor: pointer;
+
+	p {
+		display: inline-block;
+		margin: 0;
+		padding: 4px 4px 4px 22px;
+		vertical-align: middle;
+		border-radius: 4px;
+		background-color: #ddd;
+		line-height: $flattened-data-table-icon-dimension;
+	}
+	i { // Render table icon by default
+		display: inline-block;
+		background: #ddd image-url("sprite_charts.png") no-repeat 2px -844px;
+		width: $flattened-data-table-icon-dimension;
+		height: $flattened-data-table-icon-dimension;
+		margin-left: -$flattened-data-table-icon-dimension;
+		vertical-align: bottom;
+	}
+	i.chart {
+		background-position: 2px -782px;
+	}
+}

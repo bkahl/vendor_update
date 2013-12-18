@@ -1,0 +1,214 @@
+@import "common";
+
+/* -----Mixins----- */
+@mixin connection-item {
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	padding: 3px;	
+	min-height: 150px;
+}
+
+@mixin field-list {
+	border: solid #797979;
+	border-width: 0px 1px 1px 1px;
+	padding: 10px;
+}
+
+@mixin data-item {
+	background-color: #e4e4e4;
+	border: 1px solid #797979;
+	border-radius: 5px;
+	padding: 8px;	
+}
+
+/* -----Classes----- */
+.connectionList {
+	max-height: 275px; 
+	overflow: auto;
+}
+
+.file-drop {	
+	width: 64px;
+	height: 64px;
+	border: 2px dashed #ccc;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.file-drop-active {
+	background-color: #feffde;
+}
+.file-attach {
+	background: image-url("paper-clip.png");
+	width: 64px;
+	height: 64px;
+	cursor: pointer;
+}
+
+.upload-status {
+	min-height: 50px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.tabs-content {
+	background-color: white;
+	padding: 15px;
+	border: solid 1px #E6E6E6;
+	border-top-width: 0px;
+}
+
+.datasource-type {
+	padding: 15px;
+	min-height: 250px;
+}
+
+.datasource-save {
+	margin-top: 20px;
+}
+
+dl.tabs {
+	margin-bottom: 0px;
+}
+
+.data-source-connection {	
+	@include connection-item;
+	position: relative;
+}
+
+.select-fields {
+	float: middle;
+	cursor: pointer;
+}
+
+.connection-edit-controls {
+	@include edit-controls;
+}
+
+.connection-edit-controls li {
+	list-style: none outside none;
+	float: left;
+}
+
+.connection-edit-button {
+	@include edit-button;
+}
+
+.connection-edit-button:hover {
+	@include edit-button-hover;
+}
+
+.hidden-upload-controls {
+	position: absolute;
+	left: -10000px;
+	/*opacity:0; height:0px;width:0px;*/
+}
+
+.available-data-filter {
+	background-color: #c0c0c0;	
+	min-height: 42px;
+}
+
+.available-data-filter h3,
+.available-data-filter li {
+	margin-top: 7px;
+}
+
+.available-data-filter-item {
+	background-color: #f2f2f2;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	padding: 3px;	
+}
+.available-data-filter-item:hover {	
+	background-color: #fff;	
+	cursor: pointer;
+}
+.avaiableDataFilterSelecteditem, .avaiableDataFilterSelecteditem:hover  {
+	background-color: #363e43;
+	color: #fff;
+}
+
+.available-data {	
+	@include connection-item;
+}
+
+li.filteredOut { display: none; }
+
+.note {
+	color: #96b72e;
+}
+
+.table-list {
+	height: 492px;
+	overflow: auto;	
+}
+
+.field-list-selection {
+	@include field-list;
+	height: 468px;	
+	overflow: auto;
+}
+.field-list ul {
+	margin: 0px !important;
+}
+.field-list .block-grid li:first-child {
+	margin-top: 8px;
+}
+
+.field-list-join {
+	@include field-list;
+}
+
+
+
+.selectable-data-item {
+	@include data-item;	
+}
+.selectable-data-item:hover {
+	background-color: #999;	
+	cursor: pointer;
+}
+
+.selectedDataItem , .selectedDataItem:hover{
+	background-color: #666;
+	color: #fff;
+}
+
+h4.data-acquisition-header {
+	color: #fff;
+	margin-left: 10px;
+	padding-top: 10px;
+}
+
+.fields-header {
+	background-color: #c9c9c9;
+	border: 1px solid #797979;
+	font-weight: bold;
+}
+.fields-row {
+	padding: 3px;
+}
+.fieldListAltRow {
+	background-color: #e4e4e4;
+}
+
+.fieldSelectedIcon {
+	background: image-url("tick.png");
+	width: 16px;
+	height: 16px;
+}
+
+.joinable-data-item {
+	@include data-item;	
+}
+.joinable-data-item:hover .joinable-data-hook,
+.plumbing-active .joinable-data-hook {
+	display: block;
+}
+
+.joinable-data-hook {
+	width: 24px;
+	height: 24px;	
+}

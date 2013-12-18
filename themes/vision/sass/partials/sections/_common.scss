@@ -1,0 +1,258 @@
+/* Global styles */
+
+.application-panel {
+	position: relative;
+	font-size: 12px;
+	background-color: #89a !important;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 10px 10px 20px 10px;
+}
+
+.linkstyle {
+	cursor: pointer;
+	user-select: none;
+}
+.box.perspective:hover h2.linkstyle {
+	color: #269;
+}
+/* End Global Styles */
+	
+/* Note: will need to create unique class for content boxes, class .panel is only for wrapper */
+.box { /* for projects page */
+	background: #fff;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 20px;
+	-webkit-box-shadow: 1px 1px 3px 0px #eee;
+    box-shadow: 1px 1px 3px 0px #eee;
+
+}
+
+.box.small {
+	padding: 7px;
+} 
+.inner-panel {
+	background: #f2f2f2;
+	border: solid 1px #e6e6e6;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 0 0 22px 0;
+	padding: 20px;
+	overflow: hidden;
+}
+
+.ui-icon-white {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	background-image: image-url("ui-icons_ffffff_256x240.png");
+}
+
+/* -----Top bar header----- */
+
+.thinkspace-label {
+	color: #939393;
+	font-size: 12px;
+}
+
+.thinkspace-project-name {
+	color: #fff;	
+}
+
+a.thinkspace-link:hover {
+	color: #d9d9d9 !important;
+}
+
+/* -----Overlay----- */
+
+.help-overlay {
+	position: absolute;	
+	top: 40%;
+	left: 25%;
+}
+.help-overlay span,
+.help-overlay a {
+	color: #fff; 
+}
+
+.got-it-button {
+	border: 4px solid #385d8a;
+	background: #558ed5;
+	text-align: center;
+	width: 240px;
+	padding: 22px;
+	opacity: 1 !important;	
+	cursor: pointer;
+}
+.got-it-button span {
+	font-size: 20px;
+}
+
+/* -----Data-------- */
+.display-null {
+	color: #fff;
+	background: #777;
+	border-radius: 2px;
+	padding: 1px !important;
+}
+
+
+/* -----Editing----- */
+@mixin edit-controls {	
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	visibility: hidden;
+}
+
+@mixin edit-button {
+	background-color: #555;
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 5px;
+	margin: 0px 1px 0px 1px;
+}
+
+@mixin edit-button-hover {
+	background-color: #222;
+}
+
+/* ---Caption Edit--- */
+
+@mixin caption-edit-base {
+	
+}
+
+h1.caption-edit {
+	border: 1px solid #fff;
+	border-radius: 3px;
+	transition: border-color 0.20s ease-in-out 0s, background 0.20s ease-in-out 0s;	
+
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+h1.caption-edit:hover {	
+	border: 1px solid #ccc;
+	background: #f9f9f9;
+}
+
+input.caption-edit {	
+	font-family: Lato, arial, sans-serif;	
+	background: #f9f9f9;
+}
+
+.caption-edit-controls {
+	background: #ccc;
+    border-radius: 0 0 4px 4px;
+    padding: 2px;
+    position: absolute;
+    right: 0;
+    top: 31px;
+    z-index: 50;
+    height: auto !important;
+}
+
+.caption-edit-controls li {
+	list-style: none outside none;
+	display: inline-block;
+}
+
+.caption-edit-button {
+	@include edit-button;
+}
+
+.caption-edit-button:hover {
+	@include edit-button-hover;
+}
+
+input.title { 
+	height: 34px !important; 
+	font-size: 25px !important;
+}
+
+div.title-container { 
+	position: relative;
+    left: 3px;
+    top: 3px;
+    width: 50%;
+}
+
+div.title-container.project-name h1 {
+	color: #fff;
+	font-size: 14px;	
+	margin: 10px 0 0 10px;
+}
+
+.title-container h1.caption-edit {
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+.title-container h1.caption-edit:hover {
+	background: #888;
+}
+.title-container.project-name.left h1.caption-edit:hover {
+	background: #333;
+}
+
+/* -----colors----- */
+$accent_subnav: #2ba6cb; 
+
+
+.pointer { cursor: pointer !important; }
+
+div.error  {
+  border-color: #c60f13 !important;
+  background-color: rgba(198, 15, 19, 0.1);
+}
+
+/* ------Helper for foundation columns -----*/
+.firstColumn{
+	padding-left:0;
+}
+
+.lastColumn{
+	padding-right:0;	
+}
+
+/* -----Icons----- */
+.dark-icons {
+	background-image: image-url("sprite_icons_alpha_dark.png");
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+}
+
+.dark-icons.check {
+	background-position: 0px -185px;
+}
+
+/* Matches style of input type="number" */
+.tallSelectList {
+	border-color: rgb(187,187,187);
+	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 2px 0px inset;
+	height: 32px;
+	border-radius: 3px;
+}
+
+i.data.filter {
+	background: transparent image-url("sprite_icons_grey_sm.png") no-repeat 0 0;
+	display: block;
+	height: 19px;
+	width: 19px;
+}
+
+i.data.filter.on { background-position: -49px -118px; }
+i.data.filter.off { background-position: -73px -118px; }
+
+.clear {
+	clear: both;
+}

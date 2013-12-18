@@ -1,0 +1,38 @@
+﻿
+.loginHeader{
+	   background: image-url("home_logo.png") no-repeat scroll 50% 90% transparent;
+	   height: 75px;
+}
+.loginFooter{
+	   background: image-url("logi_sm.png") no-repeat scroll 50% 90% transparent;
+	   height: 45px;
+}
+
+fieldset.login, fieldset.recover-password, fieldset.reset-password, fieldset.create-account,{
+	
+	background-color: white;
+	.check-box { display: inline-block; margin: 10px 0 0 20px;}
+	.check-box-label { display: inline-block; }
+	.with-button {margin-bottom: 10px;}
+
+	legend {
+		background-color: #ddd;
+		border-color: grey;
+		width: 100%;
+		margin: 0px;
+		padding: 10px;
+		font-size: 14px;
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
+		border-bottom: 1px solid #ccc;
+	}
+	.alert{
+		background-color: white;
+		border-color: #C60F13;
+		color: #C60F13;
+		font-weight: normal;
+		text-shadow: none;
+	}
+	.alert ul {list-style: none outside none;}
+
+}

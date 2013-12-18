@@ -1,0 +1,436 @@
+/* ------------- Visualizations ------------- */
+svg {
+	.nv-axis text, .nv-legend text {
+		font: 10px Lato, Arial, Helvetica, sans-serif;
+	}
+}
+
+/* ------------- Viz Cortex ----------- */
+.title-container input {
+	max-width: none !important;
+}
+
+#visualization-panel {
+	width: 100%;
+	margin-bottom: 20px;
+	overflow: visible;
+
+	.columns {
+		padding: 0px;
+	}
+
+	a.disable, label.disable {
+		cursor: default;
+		opacity: 0.5;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	
+	h1 {
+		color: #fff;
+	}
+
+	.viz_chart {
+		min-height: 400px;
+		margin-bottom: 5px;
+		border-left: 1px solid #ccc;
+  		border-bottom: 1px solid #ccc;
+	}
+
+	.visualization {
+		overflow: hidden;
+	}
+}
+
+// Visualization error messages need to use 100% width, otherwise messages are squished together
+.viz_chart .front {
+	width: 100%;
+}
+
+#visualization-panel li a.tags {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	background-position: 0 -1102px;
+}
+#visualization-panel .publish input {
+	margin: 9px 2px 5px;
+}
+
+#visualization-panel .publish span {
+	display: inline-block;
+    padding: 0 0 0 3px;
+    position: relative;
+    top: -2px;
+}
+
+.visualization-editor-workspace {
+	border-radius: 5px 0px 5px 5px;
+	background-color: white;
+  	padding: 10px !important;
+}
+
+#visualization-panel .capsule {
+	width: 150px;
+	background-image: none;
+	padding: 6px 2px 2px !important;
+	height: 41px;
+}
+
+/* --------------- Cortex Menu --------------- */
+.visualization-actions .tags .action-label {
+	font-size: 14px;
+	margin-left: 35px;
+}
+.visualization-actions .tags .icon.tags {
+	background: transparent image-url("sprite_icons.png") no-repeat 2px -1102px;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	position: absolute;
+	top: -3px;
+	opacity: 0.7;
+}
+.visualization-actions .tags span.add {
+	color: #fff;
+	cursor: pointer;
+}
+
+.visualization-editor .tags-container { 
+	font-size: 11px; 
+	margin: 8px 0 0 5px; 
+	height: 70px;
+	padding: 0;	
+	cursor: pointer; 
+	float: none; 
+	overflow: auto;
+}
+
+.tags-container > span {
+	display: inline-block;
+}
+.visualization-editor .visualization-actions .tags span.add:hover  {
+	color: #fff;
+	text-decoration: underline;
+}
+.tags-link {
+	padding-top: 8px;
+	font-size: 11px;
+}
+.tags-container span.next {
+	background: transparent image-url("sprite_icons.png") no-repeat -3px -1460px;
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+}
+.tags-container span.del {
+	background: transparent image-url("sprite_icons.png") no-repeat -3px -1548px;
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+}
+.tags-container span.del:hover {
+	background-position: -3px -1503px;
+}
+.tags input[type="text"] {
+	font-size: 12px;
+	padding: 2px;
+	height: 20px;
+	margin: 10px 0 0 10px;
+	width: 57%;
+	display: inline;
+}
+#tag-input button {
+	background: #999 !important;
+	font-size: 11px;
+	padding: 2px;
+	margin: 0;
+	cursor: pointer;
+	box-shadow: none;
+	outline: none;
+	border: 1px solid #aaa;
+	border-right: 2px;
+}
+#tag-input button:hover {
+	background: #888 !important;
+}
+#tag-input-result {
+	background: #fff;
+	position: absolute;	
+	left: 10px;
+	width: 96%;
+	overflow: auto;
+	z-index: 60;
+}
+#tag-input-result .tag {
+	list-style: none;
+	margin: 3px;
+	color: #333;
+	padding: 3px 5px;
+}
+
+.visualization-actions .dropzone { 
+  min-height: 75px;
+}
+
+.visualization-actions .legend div {
+	font-size: 12px;
+}
+
+.visualization-editor .viz-actions {
+	float: right;
+	margin-bottom: 5px;
+}
+
+.visualization-actions div.tags {
+	border-left: 1px solid #ddd;
+	color: #eee;
+	font-size: 11px;
+	margin: 5px 0 5px 40px;
+	padding: 5px 0 0;
+	height: 100px;
+	min-width: 210px;
+	position: relative;
+	display: block;
+}
+
+
+/* --------------- Mini Cortex --------------- */
+.infoMiniVortex .visualization-actions {
+	background: rgba(5, 5, 5, 0.1);
+	border-radius: 5px;
+	padding: 10px;
+	width:auto;
+	display: inline-block;
+}
+
+.infoMiniVortex .visualization-actions .info-box {
+	width:auto;
+}
+
+.infoMiniVortex .visualization-editor .visualization-actions{
+	border-top:none;
+}
+
+.infoMiniVortex .visualization-actions .info-box .icon {
+	margin:0px;
+}
+
+.infoMiniVortex .visualization-actions .info-box .icon {
+	vertical-align: top;
+	position: static;
+}
+
+.infoMiniVortex .visualization-actions .info-box .icon.info {
+	background-position :0 -977px;
+}
+
+.infoMiniVortex .visualization-actions .info-box .icon.notes {
+	margin-top: 0px;
+	background-position :0 -1039px;
+}
+
+.infoMiniVortex .visualization-actions .info-box span {
+	position: absolute;
+	margin-top: 7px;
+	width:30px;
+	font-style: normal;
+	color:#333333;
+	pointer-events:none;
+}
+
+.infoMiniVortex .visualization-actions div.tags{
+	display:inline-block;
+	margin:0;
+	border:none;
+	height:auto;
+}
+
+
+/* --------------- Color and Size Sliders --------------- */
+.intensity-slider {
+	margin-top: 5px;
+
+	.slider-container {
+		position: relative;
+		width: 100%;
+		float: left;
+		min-height: 25px;
+
+		.d3-scale {
+			position: absolute;
+			display: block;
+			left: 0;
+			top: 0;
+		}
+
+		.ui-slider {
+			position: absolute;
+			left: 0;
+			width: 100%;
+  			background: none repeat scroll 0 0 transparent;
+    		border: medium none;
+		}
+	}
+
+	.min {
+		float: left;
+		text-align: left;
+		clear: left;
+	}
+
+	.max {
+		float: right;
+		text-align: right;
+	}
+}
+
+.size .intensity-slider { 
+	.ui-slider {
+		border-radius: 0px;
+		border: none;
+		background: none;
+	}
+
+	line {
+		stroke: #666;
+		stroke-width: 2px;
+	}
+
+	circle {
+		stroke: #666;
+		fill: none;
+	}
+}
+
+.color .intensity-slider .ui-slider {
+	border-radius: 0px;
+	border: none;
+	background: none;
+}
+
+/* ---Tags--- */
+.visualization-actions .tag-input-dialog{
+	position: absolute;
+	left: 40px;
+	z-index: 50;
+	background: #ddd;
+	border-radius: 5px;
+	padding-bottom: 15px;
+}
+.visualization-actions .tag-input-container {
+	position: relative;
+	width: 175px;
+	margin: 10px 10px 0 10px;	
+}
+
+.visualization-actions button {
+	position: relative !important;	
+	float: right;
+	margin: 0px 3px 0px 3px !important;
+}
+
+/* --------------- Visualization External Legend --------------- */
+.legend-series {
+    max-height: 250px;
+    overflow: auto;
+    padding: 0 0 10px;
+}
+.visualization-editor .visualization-actions .legend-series li {
+	min-height: 10px;
+}
+
+/* --- NVD3 Overrides for Color Slider --- */
+.heatmap-coloring .nv-group rect {
+	fill-opacity: 1;
+}
+
+/* --------------- Filter Histogram Visualization --------------- */
+.distributionChart {
+    min-height: 100px;
+    min-width: 300px;
+    background: #fff;
+}
+.distributionChart svg, .distributionChart svg text{
+    fill: #333;
+	font: 10px lato, sans-serif;
+}
+.distributionChart path {
+    fill: darkgray;
+}
+.distributionChart .axis path,
+.distributionChart .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.distributionChart .brush .extent {
+    stroke: #fff;
+    fill-opacity: .5;
+    shape-rendering: crispEdges;
+    fill: lightsteelblue;
+}
+
+.invertSelection .distributionChart rect.extent{
+	fill: rgba(0,0,0,.6);
+}
+
+/* --------------- Recommended Charts --------------- */
+.recommended_charts {
+	padding-top: 10px;
+	width: 100%;
+
+	p {
+		text-align: left;
+		margin-bottom: 5px;
+	}
+
+	ul {
+		margin-bottom: 5px;
+		padding: 4px 0 0 4px;
+		max-height: 72px;
+		overflow-y: auto;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	i.chart_icon {
+		background: #58636f image-url("sprite_charts_sm.png") no-repeat center 0px;
+		border-radius: 3px;
+		cursor: pointer;
+		margin: 0px 5px 5px 0;
+		float: left;
+		width: 28px;
+		height: 28px;
+
+		&:hover {
+			box-shadow: 0 0 8px rgba(0,0,0,0.75);
+		}
+
+		&.barChart { background-position: center -3px;}
+		&.groupedMultiSeriesBarChart { background-position: center -37px; }
+		&.barChartwithColor { background-position: center -71px; }
+		&.stackedMultiSeriesBarChart { background-position: center -105px; }
+		&.multiSeriesCrosstabBarChart { background-position: center -138px; }
+
+		&.columnChart { background-position: center -173px; }
+		&.groupedMultiSeriesColumnChart { background-position: center -207px; }
+		&.columnChartwithColor { background-position: center -241px; }
+		&.stackedMultiSeriesColumnChart { background-position: center -275px; }
+		&.multiSeriesCrosstabColumnChart { background-position: center -308px; }
+
+		&.lineChart { background-position: center -342px; }
+		&.multiSeriesLineChart { background-position: center -376px; }
+		&.crosstabLineChart { background-position: center -410px; }
+		&.scatterChart { background-position: center -444px; }
+		&.scatterChartwithColor { background-position: center -478px; }
+		&.scatterChartwithSize { background-position: center -512px; }
+		&.scatterChartwithColorandSize { background-position: center -546px; }
+		&.pieChart { background-position: center -580px; }
+		&.table { background-position: center -614px; }
+	}
+}

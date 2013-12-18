@@ -1,0 +1,51 @@
+﻿/* .tags-dialog-container {
+    min-width: 600px;
+    max-width: 768px;
+} */
+
+.tags-dialog 
+{
+    display: none;
+    padding: 4px !important;
+    // width: auto;
+}
+.tags-dialog-container .ui-dialog-titlebar
+{
+    line-height: 1.2;
+}
+.tags-existed-container, .tags-available-container
+{
+    cursor: pointer;
+    list-style: none outside none;
+    clear: both;
+}
+.tags-existed-container li, .tags-available-container li
+{
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    display: inline-block;
+    margin: 3px;
+    padding: 2px 18px 2px 2px;
+}
+.tags-existed-container li:hover
+{
+    background: #ddd image-url("sprite_icons.png") no-repeat right -431px;
+}
+.tags-available-container li:hover
+{
+    background: #ddd image-url("sprite_icons.png") no-repeat right -676px;
+}
+a.add-tag-button.button
+{
+    width: 86%;
+    color: white;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+.tags-existed
+{
+    margin-right: 10px;
+}

@@ -1,0 +1,98 @@
+﻿
+.note-editbox
+{
+    margin-bottom: 0px;
+	height: 60px;
+}
+.node-editbox-is-not-empty
+{
+    border-radius: 3px 3px 0px 0px;
+}
+.note-action-container
+{
+    border-radius: 0px 0px 3px 3px;
+    border: 1px solid #CCCCCC;
+    border-top: 1px none transparent;
+    background-color: #E9E9E9;
+    padding: 4px 0;
+    a {
+        margin: 0px 3px;
+    }
+}
+.note-view-item {
+    a {
+        visibility: hidden;
+    }
+    &:hover {
+        border-radius: 6px;
+        background-color: #dedede;
+
+        a {
+            visibility: visible;
+        }
+    }
+}
+.note-view-item + .note-view-item {
+    border-top: 1px solid #ccc;
+}
+.note-view-item:hover + .note-view-item,
+.note-view-item + .note-view-item:hover {
+    border-top-color: transparent;
+}
+.note-edit-item:first-child {
+    margin-top: 10px;
+}
+
+.note-body-when-delete
+{
+    border-radius: 3px 3px 0px 0px;
+    border: 1px solid #CCCCCC;
+    padding: 2px;
+}
+.note-text
+{
+    text-decoration: none;
+    line-height: 1.2em;
+    font-size: 12px;
+    padding: 4px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.note-author
+{
+    font-size: 10px !important;
+    line-height: 1em;
+    margin-bottom: 0px;
+    padding-left: 4px;
+}
+.notes-list
+{
+    max-height: 300px;
+    overflow: auto;
+}
+
+.notes-list .actions.notes .edit {
+    padding-right: 5px;
+}
+
+
+.notes-container
+{
+    background-color: #fff;
+    padding: 6px;
+    border: 1px solid #CCCCCC;
+}
+
+.notes-buttons {
+    margin-top: 10px;
+    text-align: right;
+
+    button.button.round {
+        margin-left: 25%;
+    }
+}
+
+#divNotes{
+	max-height: 450px;
+	overflow-y: auto;
+}

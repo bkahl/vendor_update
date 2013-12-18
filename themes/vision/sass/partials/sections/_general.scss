@@ -1,0 +1,350 @@
+/* error pages */
+#errorPage h1, #errorPage h2 {
+	font: 18px Lato, Arial, Helvetica, sans-serif;
+	color: #666;
+}
+#errorPage p {
+	font: 12px Lato, Arial, Helvetica, sans-serif;
+	color: #666;
+}
+#errorPage {
+	margin: 20px 0 50px 0;
+	text-align: center;
+}
+
+/* use min width on body until we change to more responsive design */
+body {
+	min-width: 1160px;
+}
+
+.hidden-upload-form iframe {
+	display: none;
+}
+
+.reveal-modal {
+	z-index: 2000;
+}
+
+::-webkit-input-placeholder { color:    #999 !important; }
+:-moz-placeholder { color:    #999 !important; }
+::-moz-placeholder { color:    #999 !important; }
+:-ms-input-placeholder { color:    #999 !important; }
+
+.input-validation-error, input.input-validation-error, textarea.input-validation-error { border-color: #c60f13; background-color: rgba(198, 15, 19, 0.1); }
+.field-validation-error { display: block; padding: 6px 4px; margin-top: -13px; margin-bottom: 12px; background: #c60f13; color: #fff; font-size: 12px; font-weight: bold; -moz-border-radius-bottomleft: 2px; -webkit-border-bottom-left-radius: 2px; border-bottom-left-radius: 2px; -moz-border-radius-bottomright: 2px; -webkit-border-bottom-right-radius: 2px; border-bottom-right-radius: 2px; }
+.validation-summary {}
+.validation-summary ul { margin-bottom: 0; }
+
+.disabledLink, .disableLink:hover
+{
+  color: gray !important;
+  font-style: normal;
+  text-decoration: none !important;
+  cursor: default;
+}
+
+/* generic background for dialog boxes */
+.dialog-panel {
+	background-color: #89a;
+	border-radius: 5px; 
+	margin: 20px;
+	padding: 20px;
+}
+/* generic white page area on top of .dialog panel */
+.area  {
+	background: #fff;
+	border-radius: 10px;
+	padding: 60px 30px 50px 30px;
+	position: relative;
+}
+
+/* rounded areas */
+.rounded5 {
+	border-radius: 5px;
+}
+.rounded10 {
+	border-radius: 10px;
+}
+.rounded15 {
+	border-radius: 15px;
+}
+.pill {
+	background: #ddd;
+	border: 1px solid #ccc;
+	padding: 4px
+}
+/* content boxes */
+
+.contentbox {
+	background: #eee;
+	border: 1px solid #ccc;
+	margin: 0 0 20px 20px;
+}
+.actionbox {
+	background: #666;
+	margin: 0 0 20px 20px;
+}
+.actionbox div {
+	margin: auto;
+	text-align: center;
+	color: #ddd;
+	cursor: pointer;
+}
+/* float left */
+.floatleft {
+	float: left;
+}
+
+/* navigation */
+.top-subnav {
+	background: #333;
+	color: #888;
+	width: 100%;
+	min-height: 37px;
+	padding: 5px 15px;
+	margin: 0;
+	overflow: visible;
+	position: relative;
+	clear: both;
+	top: -5px;
+}
+
+.top-subnav a.recent {
+color: #ddd;
+padding: 7px 15px 0px 20px;
+margin: 0;
+height: 30px;
+display: inline-block;
+border-right: 1px solid #444;
+}
+
+.top-subnav a.recent span {
+	background: transparent image-url("sprite_icons.png") no-repeat right -512px;
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	margin: -16px -5px 0 5px;
+	float: right;
+}
+
+.top-subnav #top-subnav-right { 
+  color: #ddd;
+  margin: -28px 0 0;
+  min-height: 30px;
+  padding-right: 5px;
+  max-width: 600px;
+  float: right;
+}
+.top-subnav-filterbox {
+  float: right;
+  margin: -25px 0 0 0;
+  background-color: #333;
+  min-height: 27px;
+  max-width: 500px;
+  border-radius: 3px;
+}
+.top-subnav-filterbox .header-name {
+  margin: 3px;
+}  
+
+.dropmenu {
+  position: absolute;
+  background: #333;
+  display: none;
+}
+.dropmenu.sub {
+  margin-left: 114px;
+}
+.dropmenu.recent {
+  margin-left: -16px;
+}
+.dropmenu {
+  color: #ddd;
+}
+
+
+
+
+
+p.sub-nav {
+  color: #aaa;
+}
+.sub-nav a {
+  background: #eee;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 3px 9px;
+}
+.sub-nav a.active {
+  background: #2ba6cb;
+  color: #fff;
+}
+.sub-nav a:hover {
+  text-decoration: none;
+  background: #ddd;
+  color: #158;
+}
+.sub-nav a.active:hover {
+  background: #2ba6cb;
+  color: #fff;
+}
+.sub-nav a.sort {
+  padding-right: 20px;
+  position: relative;
+}
+.sub-nav a.sort.active span {
+  background: transparent image-url("sprite_icons_white_sm.png") no-repeat 0 -18px;
+  display: inline-block;  
+  right: 5px;
+  height: 12px;
+  width: 14px;
+}
+.sub-nav a.sort.active span.descending {
+  background-position: -17px -18px;
+}
+/* end navs */
+
+#bg_dark_trans {
+	background-color: rgba(0,0,0,0.7);
+	min-height: 200px;
+	padding: 30px;
+}
+.area.text {
+	background: #fff;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+#bg_dark_trans {
+	background-color: rgba(0,0,0,0.7);
+	min-height: 200px;
+	padding: 30px;
+}
+.area.text {
+	background: #fff;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+/* buttons */
+a.btn, 
+button {
+	padding: 5px 10px;
+	margin-bottom: 15px;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px 0px #333;
+}
+a.btn.grey,
+button {
+	background: #888;
+	color: #fff;
+	font: bold 12px Lato, Arial, Helvetica, sans-serif;
+	letter-spacing: .1em;
+	margin-right: 3px;
+}
+a.btn.grey:hover {
+	background-color: #aaa;
+	box-shadow: 1px 1px 3px 0px #111;
+	text-decoration: none;
+}
+
+/* end buttons */
+
+.close-reveal-modal:hover {
+	text-decoration: none;
+}
+
+.debug-link {
+	position: absolute;
+	bottom: 3px;
+	right: 40px;
+
+	a {
+		color: transparent;
+	}
+	a:hover {
+		color: inherit;
+	}
+}
+
+.quick-links-section {
+	padding-bottom: 30px;
+
+	.row {
+		padding-bottom: 5px;
+	}
+
+	a.button:hover {
+		text-decoration: none;
+	}
+}
+
+.quick-links-divider {
+	padding-top: 10px;
+}
+
+/* jsPlumbing connections(lines) and endpoints */
+._jsPlumb_endpoint, ._jsPlumb_connector {
+	z-index: 2000;
+}
+
+/* tags, pill blocks */
+span.tag {
+  display: inline-block;
+  padding: 0 6px 0 0;
+  margin: 0;
+  position: relative;
+  color: #fff;
+}
+span.tag span {
+  display: none;
+}
+
+span.tag span {
+  background: transparent image-url("sprite_icons.png") no-repeat -15px -394px;
+  height: 10px;
+  width: 10px;
+  padding: 0;
+  position: absolute;
+  top: -2px;
+  right: 0px;
+  text-indent: 999px;
+  cursor: pointer;
+}
+span.tag:hover span {
+  display: block;
+}
+
+
+.loadStatusDialog.ui-widget-content{
+	border:1px solid black;
+	border-radius:5px;
+	background:transparent !important;
+	
+}
+
+.loadStatusDialog .ui-widget-content{
+	background: rgba(0,0,0,0.6);
+	padding-top:25px;
+}
+
+.loadStatusDialog .ui-dialog-titlebar{
+	display:none;
+}
+
+.loadStatusDialog{
+	text-align: center;
+}
+
+.loadStatusDialog p{
+	font-weight: bold;
+	color:white;
+}
+
+.ui-widget-overlay{
+	opacity:.7 !important;
+}
+
+.disableSave{
+	opacity: 0.3 !important;
+}

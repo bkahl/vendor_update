@@ -1,0 +1,33 @@
+﻿/* styles for filter panel and filter list display */
+
+.filters {
+	display: block;
+	border-radius: 10px;
+	padding: 8px;
+
+	background-color: #ddd;
+	color: #999;
+
+	min-height: 40px;
+
+	h5 {
+		display: inline-block;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.filter {
+		border: solid 1px #aac;
+	}
+
+	.criteria {
+
+		.icon {
+			color: #aac;
+			font-size: 0.8em;
+			width: 0.7em;
+			vertical-align: middle;
+		}
+	
+	}
+}

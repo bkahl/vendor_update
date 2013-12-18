@@ -1,0 +1,77 @@
+﻿
+/*********************  LOGI jQuery UI overrides ********************/
+.modalContent{
+	display: none;
+}
+
+.ui-widget-overlay {
+	background: #333333;
+	opacity: .30;
+}
+
+.ui-dialog-titlebar {
+    padding: .8em;
+}
+.ui-dialog-titlebar .ui-dialog-titlebar-close{
+    float: right;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover {
+    border: none;
+}
+.ui-dialog-content {
+    padding: 1.2em;
+}
+.row.modal {
+    min-width: 400px;
+    margin:0px;
+}
+.ui-widget-content {
+    border: 1px solid #ddd;
+}
+.ui-widget {
+    font-family: Lato, Arial, sans-serif;
+    font-size: 1.2em;
+}
+.ui-dialog {
+    padding: 0;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-radius: 5px;
+}
+.ui-widget-header {
+    background: #ddd;
+    border: none;
+    border-radius: 0;
+}
+
+.ui-dialog-content.ui-widget-content{
+    border:none;    
+    overflow:auto;
+    min-height:300px;
+}
+
+.ui-dialog-buttonpane.ui-widget-content{
+     border:none;
+}
+
+.ui-widget-content .ui-dialog-buttonset{
+    text-align:right;
+    padding-right:15px;
+   /* padding-top:15px;*/
+}
+.ui-widget-content .ui-dialog-buttonset .ui-button{
+    font-size: 11px;
+    padding: 5px;
+     width: auto;
+    background: #999;
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-adius: 5px;
+    font-weight:bold;
+    color:white;
+}
+.ui-widget-content .ui-dialog-buttonset .ui-button:hover {
+    background: #bbb;
+    text-decoration: none;
+}
